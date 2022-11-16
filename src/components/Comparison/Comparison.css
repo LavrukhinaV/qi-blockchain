@@ -1,0 +1,48 @@
+.comparison {
+  padding-top: 62px;
+  margin: 0 auto;
+  max-width: 1305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1)
+}
+
+.comparison__table {
+  display: flex;
+}
+
+.comparison__table-cell {
+  margin-right: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.comparison__table-cell:last-of-type {
+  margin-right: 0;
+}
+
+.comparison__table-cell-token {
+  margin: 0 8px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.comparison__table-cell-ratio {
+  margin: 0;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.comparison__table-cell-ratio_color_pink {
+  color: rgba(255, 19, 109, 1);
+}
+
+.comparison__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}

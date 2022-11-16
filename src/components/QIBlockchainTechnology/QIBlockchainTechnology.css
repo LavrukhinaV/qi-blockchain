@@ -1,0 +1,41 @@
+.technology {
+  margin: 0 auto;
+  max-width: 1278px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "title image"
+  "text image";
+  gap: 24px 121px;
+}
+
+.technology__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  grid-area: title;
+}
+
+.technology__title_pink {
+  color: #FF136D;
+}
+
+.technology__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  grid-area: text;
+}
+
+.technology__image {
+  width: 359px;
+  height: 313px;
+  background-image: url("../../images/Technology-image.png");
+  grid-area: image;
+}

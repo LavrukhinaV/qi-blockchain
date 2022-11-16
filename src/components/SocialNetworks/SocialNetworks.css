@@ -1,0 +1,43 @@
+.links {
+  display: flex;
+}
+
+.links__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.links__item {
+  list-style: none;
+  margin-right: 8px;
+}
+
+.links__item:last-of-type {
+  margin-right: 0;
+}
+
+.links__item_languages {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  height: 24px;
+}
+
+.links__button {
+  background: none;
+  border: none;
+  padding: 0;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.links__button:first-of-type {
+  margin-left: 8px;
+}
+
+.links__button:last-of-type {
+  margin-right: 8px;
+}

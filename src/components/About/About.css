@@ -1,0 +1,88 @@
+.about {
+  margin: 0 auto;
+  max-width: 1305px;
+  padding: 114px 0 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100px;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.about__colortext {
+  color: rgba(255, 19, 109, 1);
+}
+
+.about__button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.about__button_with-gradient {
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  width: 497px;
+  height: 62px;
+  background: linear-gradient(to left, rgba(255, 19, 109, 1), rgba(69, 63, 214, 1));
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(-20px 10px 30px rgba(255, 19, 109, 0.15));
+}
+
+.about__button-container {
+  display: flex;
+}
+
+.about__button_without-gradient {
+  background: none;
+  margin-right: 32px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.about__button_without-gradient:last-of-type {
+  margin-right: 0;
+}
+
+.about__button-text {
+  margin: 0 12px 0 0;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.about__button-img {
+  width: 24px;
+  height: 24px;
+}
+
+.about__button-img_type_brackets {
+  background-image: url("../../images/brackets.svg");
+}
+
+.about__button-img_type_magglass {
+  background-image: url("../../images/MagnifyingGlass.svg");
+}

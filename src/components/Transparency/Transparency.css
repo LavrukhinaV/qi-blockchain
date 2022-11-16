@@ -1,0 +1,243 @@
+.transparency {
+  margin: 0 auto;
+  max-width: 1278px;
+  padding: 64px;
+  background-color: rgba(16, 15, 15, 1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transparency__container_position_top {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "title title"
+  "table diagram";
+  gap: 0 48px;
+  padding-bottom: 48px;
+}
+
+.transparency__title {
+  margin: 0;
+  grid-area: title;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.transparency__table_position_top {
+  padding: 0;
+  margin: 0;
+  grid-area: table;
+}
+
+.transparency__table__cell {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.transparency__table-cell-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title_size_big {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.transparency__table-cell-subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.subtitle_size_big {
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.diagram {
+  grid-area: diagram;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "values graph"
+  "links links";
+  justify-items: stretch;
+}
+
+.diagram__values {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.diagram__value {
+  list-style: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.iagram__graph {
+  grid-area: graph;
+  
+}
+
+.diagram__links {
+  grid-area: links;
+  display: flex;
+  justify-self: end;
+}
+
+.link_color_pink{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: rgba(255, 19, 109, 1);
+  cursor: pointer;
+}
+
+.diagram__link {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.diagram__link:last-of-type {
+  margin-right: 0;
+}
+
+.diagram__link-img {
+  width: 16px;
+  height: 16px;
+}
+
+.diagram__link-img_type_gitdiff {
+  background-image: url("../../images/GitDiff.svg");
+}
+
+.diagram__link-img_type_clock {
+  background-image: url("../../images/Clock.svg");
+}
+
+.diagram__link-img_type_brackets {
+  background-image: url("../../images/brackets-small.svg");
+}
+
+.diagram__link-text {
+  margin: 0 0 0 8px;
+}
+
+.transparency__container_position_bottom {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+  "title ratio-container"
+  "subtitle ratio-container"
+  "table ratio-container"
+  "link ratio-container";
+  gap: 0 32px;
+  align-items: center;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.transparency__total {
+  grid-area: title;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.transparency__total-value {
+  grid-area: subtitle;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.transparency__table_position_bottom {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-area: table;
+}
+
+.transparency__table__cell_position_bottom {
+  margin-right: 32px;
+  margin-top: 0;
+}
+
+.transparency__table__cell_position_bottom:last-of-type {
+  margin-right: 0;
+}
+
+.transparency__link {
+  margin-top: 16px;
+  margin-bottom: 0;
+  grid-area: link;
+  display: flex;
+  align-items: center;
+}
+
+.transparency__link-img {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/MagnifyingGlassPlus.svg");
+}
+
+.transparency__link-text {
+  margin: 0 0 0 8px;
+}
+
+.transparency__ratio {
+  padding: 24px;
+  grid-area: ratio-container;
+  background: linear-gradient(to left, rgba(255, 19, 109, 1), rgba(255, 19, 109, 0.15));
+  border: 1px solid #FF136D;
+  border-radius: 16px;
+}
+
+.transparency__ratio-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.transparency__ratio-value {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.transparency__ratio-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}

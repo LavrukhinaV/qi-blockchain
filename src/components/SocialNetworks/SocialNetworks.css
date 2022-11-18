@@ -12,6 +12,14 @@
 .links__item {
   list-style: none;
   margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+}
+
+.link__img {
+  width: 24px;
+  height: 24px;
+
 }
 
 .links__item:last-of-type {
@@ -32,6 +40,8 @@
   padding: 0;
   height: 12px;
   margin-right: 4px;
+  cursor: pointer;
+  display: flex;
 }
 
 .links__button:first-of-type {

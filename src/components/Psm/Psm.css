@@ -1,20 +1,85 @@
 .psm {
   margin: 0 auto;
   max-width: 566px;
-  padding: 330px 0 316px;
+  padding: 204px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.psm__rocks {
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.psm__rocks_one {
+  background-image: url("../../images/supporting-elements/Rock.png");
+  left: -210px;
+  top: 150px;
+  height: 248px;
+  width: 249px;
+}
+
+.psm__rocks_two {
+  background-image: url("../../images/supporting-elements/Rock1.png");
+  left: -450px;
+  top: 380px;
+  height: 82px;
+  width: 81px;
+}
+
+.psm__rocks_three {
+  background-image: url("../../images/supporting-elements/Rock2.png");
+  left: -360px;
+  top: 250px;
+  height: 537px;
+  width: 540px;
+}
+
+.psm__rocks_four {
+  background-image: url("../../images/supporting-elements/Rock3.png");
+  left: 450px;
+  top: 120px;
+  height: 451px;
+  width: 413px;
+}
+
+.psm__rocks_five {
+  background-image: url("../../images/supporting-elements/Rock4.png");
+  right: -420px;
+  top: 370px;
+  width: 188px;
+}
+
+.psm__rocks_six {
+  background-image: url("../../images/supporting-elements/Rock5.png");
+  right: -140px;
+  top: 530px;
+  height: 129px;
+  width: 128px;
+}
+
+.psm__guard {
+  background-image: url("../../images/supporting-elements/Vector.svg");
+  width: 546px;
+  height: 542px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .psm__title {
-  margin-top: 0;
+  margin-top: 130px;
   margin-bottom: 24px;
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
+  letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .psm__subtitle {
@@ -22,9 +87,11 @@
   margin-bottom: 24px;
   font-weight: 300;
   font-size: 18px;
+  letter-spacing: -0.015em;
   line-height: 22.5px;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  z-index: 1;
 }
 
 .psm__button {
@@ -38,6 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .psm__button-text {
@@ -45,10 +113,12 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .psm__button-arrow {
+  margin-left: 12px;
   background-image: url("../../images/ArrowUp.svg");
   width: 24px;
   height: 24px;

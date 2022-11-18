@@ -1,16 +1,20 @@
 .footer {
+  background-color: rgba(8, 8, 8, 1);
+}
+
+.footer__content {
   margin: 0 auto;
   padding: 32px 0;
-  background-color: rgba(8, 8, 8, 1);
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
   "logo links"
   "copyright social-networks";
-  justify-content: space-around;
+  justify-content: space-between;;
   align-items: center;
-  gap: 12px
+  gap: 12px;
+  max-width: 1279px;
 }
 
 .footer__logo {
@@ -28,6 +32,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.5);
   grid-area: copyright;
 }
@@ -48,7 +53,11 @@
   list-style: none;
 }
 
-.footer__link:last-of-type  {
+.footer__link:last-of-type {
+  margin-right: 0;
+}
+
+.footer__link_margin_none {
   margin-right: 0;
 }
 

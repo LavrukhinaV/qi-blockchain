@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import SocialNetworks from "../SocialNetworks/SocialNetworks"
 import './Header.css'
-import logoImage from '../../images/logo-image.svg';
+import logoImage from '../../images/QIUSD.png';
 import logoText from '../../images/logo-text.svg';
 
 function Header() {

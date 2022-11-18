@@ -1,10 +1,11 @@
 .about {
   margin: 0 auto;
-  max-width: 1305px;
-  padding: 114px 0 68px;
+  max-width: 1279px;
+  padding: 145px 0 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .about__title {
@@ -14,6 +15,8 @@
   font-weight: 800;
   font-size: 80px;
   line-height: 100px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 }
 
 .about__text {
@@ -23,6 +26,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: -0.015em;
 }
 
 .about__colortext {
@@ -45,6 +49,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
+  letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.9);
   filter: drop-shadow(-20px 10px 30px rgba(255, 19, 109, 0.15));
 }
@@ -59,6 +64,7 @@
   margin-top: 32px;
   display: flex;
   align-items: center;
+  letter-spacing: -0.015em;
 }
 
 .about__button_without-gradient:last-of-type {
@@ -85,4 +91,10 @@
 
 .about__button-img_type_magglass {
   background-image: url("../../images/MagnifyingGlass.svg");
+}
+
+.about__image {
+  position: absolute;
+  left: 950px;
+  top: 70px
 }

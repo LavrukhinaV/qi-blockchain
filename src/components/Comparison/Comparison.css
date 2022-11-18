@@ -1,5 +1,5 @@
 .comparison {
-  padding-top: 62px;
+  padding-top: 54px;
   margin: 0 auto;
   max-width: 1305px;
   display: flex;
@@ -10,12 +10,16 @@
 
 .comparison__table {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .comparison__table-cell {
-  margin-right: 30px;
+  margin-right: 55px;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: -0.015em;
   display: flex;
   align-items: center;
 }
@@ -26,8 +30,12 @@
 
 .comparison__table-cell-token {
   margin: 0 8px;
-  font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.comparison__table-cell-image_qiusd {
+  width: 33px;
+  height: 33px;
 }
 
 .comparison__table-cell-ratio {
@@ -41,6 +49,8 @@
 }
 
 .comparison__text {
+  margin-top: 32px;
+  margin-bottom: 0;
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;

@@ -1,5 +1,5 @@
 import './Comparison.css';
-// import QIUSD from "../../images/logo-image.svg";
+import QIUSD from "../../images/QIUSD.png";
 import USDT from "../../images/USDT.svg";
 import USDC from "../../images/USDC.svg";
 import DAI from "../../images/DAI.svg";
@@ -9,7 +9,7 @@ function Comparison() {
     <section className="comparison">
       <ul className="comparison__table">
         <li className="comparison__table-cell">
-          <img className="comparison__table-cell-image" alt="QIUSD"></img>
+          <img className="comparison__table-cell-image comparison__table-cell-image_qiusd" src={QIUSD} alt="QIUSD"></img>
           <p className="comparison__table-cell-token">QIUSD</p>
           <p className="comparison__table-cell-ratio comparison__table-cell-ratio_color_pink">200%</p>
         </li>

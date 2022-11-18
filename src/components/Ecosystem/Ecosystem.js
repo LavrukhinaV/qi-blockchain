@@ -2,6 +2,7 @@ import './Ecosystem.css';
 import tron from "../../images/Tron.svg";
 import USDT from "../../images/USDT.svg";
 import QIUSD from "../../images/QIUSD.png";
+import Switch from "../Switch/Switch";
 
 function Ecosystem() {
   return (
@@ -9,7 +10,20 @@ function Ecosystem() {
       <h2 className="ecosystem__title">Ecosystem</h2>
       <h3 className="ecosystem__subtitle">
         QiUSD Staking
-        <span className="ecosystem__subtitle_pink"> APY 30%+</span>
+        <span className="ecosystem__subtitle_pink"> APY 30%+</span></h3>
+        <div className="ecosystem__switch">
+        <Switch />
+        <div className="ecosystem__filter">
+          <div className="ecosystem__filter-item">
+            <input className="ecosystem__filter-input" id="news" type="radio" name="radio" value="Sort by" onChange={console.log('change')} defaultChecked/>
+            <label className="ecosystem__filter-label" htmlFor="news">Sort by</label>
+          </div>
+          <div className="ecosystem__filter-item">
+            <input className="ecosystem__filter-input" id="videos" type="radio" name="radio" value="Api" onChange={console.log('change')}/>
+            <label className="ecosystem__filter-label" htmlFor="videos">Api</label>
+          </div>
+      </div>
+        </div>
         <ul className="ecosystem__table">
           <li className="ecosystem__table-cell">
             <div className="ecosystem__table-container ecosystem__table-container_position_top">
@@ -282,8 +296,7 @@ function Ecosystem() {
             </ul>
           </li>
         </ul>
-        <button type="button" className="ecosystem__button">Load more</button>
-      </h3>
+        <button type="button" className="ecosystem__button">Load More</button>
     </section>
   )
 }

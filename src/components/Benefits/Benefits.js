@@ -41,7 +41,6 @@ function Benefits() {
           </p>
         </li>
       </ul>
-
     </section>
   )
 }

@@ -65,3 +65,42 @@
   grid-area: social-networks;
   justify-self: end;
 }
+
+@media screen and (max-width: 1400px) {
+  .footer__content {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__content {
+    padding: 32px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__content {
+    padding: 15px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "links"
+    "social-networks"
+    "copyright ";
+    justify-items: center;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__social-networks {
+    justify-self: center;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

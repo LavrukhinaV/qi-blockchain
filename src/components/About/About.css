@@ -98,3 +98,94 @@
   left: 950px;
   top: 70px
 }
+
+@media screen and (max-width: 1400px) {
+  .about {
+    padding-top: 68px;
+    max-width: 1024px;
+    align-items: flex-start;
+  }
+
+  .about__title {
+    font-size: 64px;
+  }
+
+  .about__image {
+    position: initial;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    padding: 68px 60px;
+  }
+
+  .about__title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about__title {
+    font-size: 44px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    margin-right: 40px;
+  }
+
+  .about__button_with-gradient {
+    width: 345px;
+  }
+
+  .about__button-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 68px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "image"
+    "inform";
+    justify-items: center;
+  }
+
+  .about__image {
+    grid-area: image;
+    width: 255px;
+    height: auto;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__title {
+    margin-top: 108px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+
+  .about__button-container {
+    flex-direction: column;
+  }
+
+  .about__button_without-gradient {
+    margin: 25px 0 0;
+    justify-content: center;
+  }
+}

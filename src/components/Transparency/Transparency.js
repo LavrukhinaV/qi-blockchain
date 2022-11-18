@@ -73,7 +73,7 @@ function Transparency() {
         </ul>
         <NavLink to="/" className="transparency__link link_color_pink">
           <span className="transparency__link-img"></span>
-          <p className="transparency__link-text">Token Addresses</p>
+          <p className="transparency__link-text">Collateral Details</p>
         </NavLink>
         <div className="transparency__ratio">
           <h3 className="transparency__ratio-title">Collat. Ratio</h3>

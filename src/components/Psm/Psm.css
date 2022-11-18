@@ -1,77 +1,32 @@
 .psm {
   margin: 0 auto;
-  max-width: 566px;
+  background-image: url("../../images/supporting-elements/rocks.png");
   padding: 204px 0 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  display: flex;
-}
-
-.psm__rocks {
   background-repeat: no-repeat;
-  position: absolute;
+  background-position: center;
 }
 
-.psm__rocks_one {
-  background-image: url("../../images/supporting-elements/Rock.png");
-  left: -210px;
-  top: 150px;
-  height: 248px;
-  width: 249px;
-}
-
-.psm__rocks_two {
-  background-image: url("../../images/supporting-elements/Rock1.png");
-  left: -450px;
-  top: 380px;
-  height: 82px;
-  width: 81px;
-}
-
-.psm__rocks_three {
-  background-image: url("../../images/supporting-elements/Rock2.png");
-  left: -360px;
-  top: 250px;
-  height: 537px;
-  width: 540px;
-}
-
-.psm__rocks_four {
-  background-image: url("../../images/supporting-elements/Rock3.png");
-  left: 450px;
-  top: 120px;
-  height: 451px;
-  width: 413px;
-}
-
-.psm__rocks_five {
-  background-image: url("../../images/supporting-elements/Rock4.png");
-  right: -420px;
-  top: 370px;
-  width: 188px;
-}
-
-.psm__rocks_six {
-  background-image: url("../../images/supporting-elements/Rock5.png");
-  right: -140px;
-  top: 530px;
-  height: 129px;
-  width: 128px;
+.psm__content {
+  overflow: hidden;
 }
 
 .psm__guard {
   background-image: url("../../images/supporting-elements/Vector.svg");
+  background-position: center;
   width: 546px;
   height: 542px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: contain;
 }
 
 .psm__title {
-  margin-top: 130px;
+  margin-top: 30px;
   margin-bottom: 24px;
   font-weight: 800;
   font-size: 32px;
@@ -122,4 +77,31 @@
   background-image: url("../../images/ArrowUp.svg");
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .psm {
+    background-image: none;
+    max-width: 327px;
+    padding-top: 120px;
+  }
+
+  .psm__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .psm__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .psm__button {
+    width: 224px;;
+  }
+
+  .psm__guard {
+    width: 327px;
+    height: 338px;
+  }
 }

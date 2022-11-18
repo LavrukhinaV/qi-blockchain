@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .markets__title {
@@ -13,4 +14,44 @@
   line-height: 40px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.markets__image {
+  background-image: url("../../images/markets.png");
+  width: 1265px;
+  height: 544px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .markets__image {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .markets__image {
+    width: 872px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .markets__image {
+    width: 667px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .markets__image {
+    width: 667px;
+    background-image: url("../../images/marketsMobile.png");
+  }
+
+  .markets__title {
+    margin-bottom: 52px;
+  }
 }

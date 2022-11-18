@@ -42,4 +42,53 @@
   height: 313px;
   background-image: url("../../images/Technology-image.svg");
   grid-area: image;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1400px) {
+  .technology {
+    max-width: 1024px;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .technology {
+  padding: 0 60px;
+  gap: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .technology__image {
+    width: 260px;
+    height: 226px;
+    align-self: center;
+  }
+
+  .technology__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technology__image {
+    display: none;
+  }
+
+  .technology {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .technology__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .technology__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import About from '../About/About';
@@ -14,11 +15,21 @@ import Footer from "../Footer/Footer";
 import { Route, Switch } from 'react-router-dom'; 
 
 function App() {
+  const [isHeaderMenuOpen, setHeaderMenuOpen] = useState(false)
+
+  function closeHeaderMenu() {
+    setHeaderMenuOpen(false)
+  }
+
+  function handleHeaderMenuClick() {
+    setHeaderMenuOpen(true)
+  }
+
   return (
   <div className="page">
     <Switch>
       <Route exact path="/">
-        <Header />
+        <Header onHeaderMenu={handleHeaderMenuClick} isOpen={isHeaderMenuOpen} onClose={closeHeaderMenu}/>
         <About />
         <Benefits />
         <Comparison />

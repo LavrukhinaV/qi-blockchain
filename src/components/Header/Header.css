@@ -3,6 +3,7 @@
   max-width: 1279px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 0;
 }
 
@@ -36,4 +37,42 @@
 
 .header__link:last-of-type {
   margin-right: 0;
+}
+
+.header__menu-btn_open {
+  padding: 0;
+  background-image: url(../../images/supporting-elements/MobileMenuButton.svg);
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    max-width: 1024px;
+  }
+
+  .header__link {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 24px 60px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .logo__text {
+    display: none;
+  }
+
+  .logo__mobile {
+    width: 56px;
+    height: 56px;
+    background-image: url("../../images/LogoMobile.svg");
+  }
 }

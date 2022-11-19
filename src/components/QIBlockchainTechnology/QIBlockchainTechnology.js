@@ -1,4 +1,5 @@
 import './QIBlockchainTechnology.css';
+import RocksAnimation from "../RocksAnimation/RocksAnimation"
 
 function QIBlockchainTechnology() {
   return (
@@ -14,7 +15,9 @@ function QIBlockchainTechnology() {
         <p className="technology__text technology__text_paragraph_third">
         If your goal is to provide the highest security level of data/transactions. A shared database is required. There is no trust between future network participants (employees, organizations, customers)</p>
       </div>
-      <div className="technology__image"></div>
+      <div className="technology__image">
+        <RocksAnimation />
+      </div>
     </section>
   )
 }

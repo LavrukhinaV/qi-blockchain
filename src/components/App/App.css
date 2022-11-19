@@ -8,7 +8,4 @@
   -moz-text-size-adjust: 100%;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../../images/Desktop.png");
-  background-size: cover;
-  background-position: center;
 }

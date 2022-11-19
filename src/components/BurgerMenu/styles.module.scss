@@ -1,0 +1,44 @@
+@import "../../styles/colors.scss";
+
+.wrapper {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: -55px;
+  margin-top: -70px;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 95px);
+  background: $black-bg;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0 15px;
+
+  & p:last-child {
+    padding-bottom: 32px;
+  }
+}
+
+.iconwrapper {
+  position: relative;
+  z-index: 1001;
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    right: -10px;
+  }
+}

@@ -1,6 +1,7 @@
 import './Transparency.css';
 import { NavLink } from 'react-router-dom';
-import graph from "../../images/diagram.svg"
+import {ROUTES} from "../../constant/index";
+
 
 function Transparency() {
   return (
@@ -29,13 +30,13 @@ function Transparency() {
             <li className="diagram__value">0.5kk</li>
             <li className="diagram__value">0</li>
           </ul>
-          <img className="diagram__graph" src={graph} alt="graph"></img>
+          <div className="diagram__graph"></div>
           <div className="diagram__links">
             <NavLink to="/" className="diagram__link link_color_pink">
               <span className="diagram__link-img diagram__link-img_type_gitdiff"></span>
               <p className="diagram__link-text">Issuance Process</p>
             </NavLink>
-            <NavLink to="/" className="diagram__link link_color_pink">
+            <NavLink to={ROUTES.ISSUANCE_HISTORY} className="diagram__link link_color_pink">
               <span className="diagram__link-img diagram__link-img_type_clock"></span>
               <p className="diagram__link-text">Issuance History</p>
             </NavLink>

@@ -1,0 +1,94 @@
+@import "../../styles/colors";
+@import "../../styles/breakpoints";
+
+.rocksWrapper {
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+
+  // @include screen_1635 {
+  //   left: 50%;
+  // }
+
+  // @include tablet {
+  //   top: 1000px;
+  //   left: 50%;
+  // }
+
+  // @include mobile {
+  //   top: -390px;
+  // }
+}
+
+.rocksCenter {
+  position: absolute;
+  top: -361px;
+  z-index: 2;
+
+  img {
+    animation-duration: 4s;
+  }
+}
+
+.rocksLeft {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  z-index: 1;
+
+  img {
+    @include mobile {
+      @keyframes rotation {
+        0% {
+          transform: rotate(0) translateX(20%) rotate(0);
+        }
+
+        100% {
+          transform: rotate(360deg) translateX(20%) rotate(-360deg);
+        }
+      }
+    }
+  }
+}
+
+.rocksRight {
+  position: absolute;
+  top: -320px;
+  right: -200px;
+  z-index: 1;
+
+  img {
+    animation-delay: 2400ms;
+  }
+
+  @include mobile {
+    right: -150px;
+  }
+}
+
+.rocksBottom {
+  position: absolute;
+  top: -200px;
+  right: -150px;
+  z-index: 1;
+
+  img {
+    animation-delay: 1650ms;
+
+    @include mobile {
+      @keyframes rotation {
+        0% {
+          transform: rotate(0) translateX(20%) rotate(0);
+        }
+
+        100% {
+          transform: rotate(360deg) translateX(20%) rotate(-360deg);
+        }
+      }
+    }
+
+  }
+}

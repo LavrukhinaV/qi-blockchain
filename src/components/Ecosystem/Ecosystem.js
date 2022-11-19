@@ -1,9 +1,7 @@
 import './Ecosystem.css';
-import tron from "../../images/Tron.svg";
-import USDT from "../../images/USDT.svg";
-import QIUSD from "../../images/QIUSD.png";
 import Switch from "../Switch/Switch";
 import Blockchain from "../Blockchain/Blockchain";
+import LoadMoreButton from "../LoadMoreButton/LoadMoreButton"
 
 function Ecosystem() {
   return (
@@ -37,7 +35,7 @@ function Ecosystem() {
         <Blockchain />
         <Blockchain />
       </ul>
-      <button type="button" className="ecosystem__button">Load More</button>
+      <LoadMoreButton />
     </section>
   )
 }

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .members__title {
@@ -21,7 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: scroll;
   width: 100%;
 }
 
@@ -37,4 +37,14 @@
   .members {
     padding: 155px 0;
   }
+}
+
+.members__animation {
+  animation: scrolling 15s linear infinite backwards;
+  overflow: hidden;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-1000px); }
 }

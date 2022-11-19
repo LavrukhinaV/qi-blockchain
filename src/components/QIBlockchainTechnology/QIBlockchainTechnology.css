@@ -38,11 +38,13 @@
 }
 
 .technology__image {
+  position: relative;
+  grid-area: image;
   width: 359px;
   height: 313px;
-  background-image: url("../../images/Technology-image.svg");
-  grid-area: image;
-  background-size: contain;
+  /* background-image: url("../../images/Technology-image.svg");
+  
+  background-size: contain; */
 }
 
 @media screen and (max-width: 1400px) {
@@ -57,6 +59,15 @@
   .technology {
   padding: 0 60px;
   gap: 20px 40px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "image"
+  "title"
+  "text";
+  }
+  .technology__image {
+    justify-self: center;
   }
 }
 

@@ -1,0 +1,23 @@
+.mention-links {
+  max-width: 495px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: links;
+}
+
+.mention-links__link {
+  margin-right: 12px;
+  list-style: none;
+}
+
+.mention-links__link:last-of-type {
+  margin-right: 0;
+}
+
+.mention-links__link_margin_none {
+  margin-right: 0;
+}

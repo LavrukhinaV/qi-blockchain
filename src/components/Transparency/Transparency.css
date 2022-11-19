@@ -103,9 +103,14 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.iagram__graph {
+.diagram__graph {
   grid-area: graph;
-  
+  background-image: url("../../images/diagram.svg");
+  width: 773px;
+  height: 152px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .diagram__links {
@@ -321,7 +326,9 @@
 
 @media screen and (max-width: 924px) {
   .diagram__graph {
-    max-width: 420px;
+    background-image: url(../../images/diagram-mobile.svg);
+    width: 231px;
+    height: 152px;
   }
 
   .subtitle_size_big {
@@ -329,13 +336,18 @@
   }
 }
 
-@media screen and (max-width: 810px) {
-  .diagram__graph {
-    max-width: 380px;
+@media screen and (max-width: 768px) {
+  .diagram {
+    gap: 6px 20px;
+  }
+
+  .diagram__link {
+   
   }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 765px) {
   .transparency {
     margin: 0 auto;
   }
@@ -365,12 +377,12 @@
   }
 
   .transparency__table-cell-title {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .transparency__table-cell-subtitle {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
 
@@ -389,8 +401,8 @@
   }
 
   .diagram__graph {
-    width: 231px;
-    height: 152px;
+    background-image: url("../../images/diagram.svg");
+    width: 500px;
   }
 
   .transparency__container_position_bottom {
@@ -426,5 +438,13 @@
   .transparency__ratio-text {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .diagram__graph {
+    background-image: url(../../images/diagram-mobile.svg);
+    width: 231px;
+    height: 152px;
   }
 }

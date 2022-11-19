@@ -1,0 +1,18 @@
+.nav-block__link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-decoration: none;
+  margin-right: 48px;
+}
+
+.hav-block__link:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-block__link {
+    margin-right: 20px;
+  }
+}

@@ -4,7 +4,6 @@
 
 .links__list {
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -26,7 +25,7 @@
   margin-right: 0;
 }
 
-.links__item_languages {
+.links__items_languages {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -44,10 +43,6 @@
   display: flex;
 }
 
-.links__button:first-of-type {
-  margin-left: 8px;
-}
-
-.links__button:last-of-type {
+links__item lenks__item_telegram {
   margin-right: 8px;
 }

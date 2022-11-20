@@ -2,7 +2,7 @@ import React from 'react';
 import TabSelect from "./tabSelect";
 import SliderBlock from "./sliderBlock";
 import classes from './styles.module.scss';
-import useScreenWidth from "../../utils/useScreenWidth"
+import useScreenWidth from "../../utils/useScreenWidth";
 import SliderBlockMobile from "./sliderBlockMobile";
 import {useRecoilValue} from "recoil";
 import {newsTabState} from "../../store/newTab";

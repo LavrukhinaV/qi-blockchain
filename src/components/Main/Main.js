@@ -10,13 +10,13 @@ import Ecosystem from "../Ecosystem/Ecosystem";
 import Markets from "../Markets/Markets";
 import Members from "../Members/Members";
 import QIBlockchainTechnology from "../QIBlockchainTechnology/QIBlockchainTechnology";
-import News from "../News/News";
 import SliderSection from "../SliderSection"
 
 function Main() {
 
   return (
     <div className="main">
+      <div>
       <Header />
       <About />
       <Benefits />
@@ -27,9 +27,9 @@ function Main() {
       <Markets />
       <Members />
       <QIBlockchainTechnology />
-      {/* <News /> */}
       <SliderSection />
       <Footer />
+      </div>
     </div>
   );
 }

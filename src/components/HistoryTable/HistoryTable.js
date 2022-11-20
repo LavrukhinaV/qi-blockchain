@@ -1,91 +1,56 @@
 import "./HistoryTable.css";
+import useScreenWidth from "../../utils/useScreenWidth";
+import LoadMoreButton from "../LoadMoreButton/LoadMoreButton";
+import HistoryTableCell from "../HistoryTableCell/HistoryTableCell";
+import { useState, useEffect } from 'react';
 
+import {
+  ISSUANCE_HISTORY_ELEMENTS,
+  SCREEN_SIZE_DESKTOP,
+  SCREEN_SIZE_MIDLE,
+  DESKTOP_NUMBER_HISTORY_ELEMENTS,
+  MIDLE_NUMBER_HISTORY_ELEMENTS,
+  MOBILE_NUMBER_HISTORY_ELEMENTS,
+  LOAD_MORE_MOBILE
+} from "../../constant/constants";
 
 function HistoryTable() {
+  const elements = ISSUANCE_HISTORY_ELEMENTS;
+  const size = useScreenWidth();
+
+  const [numberElements, setNumberElemets] = useState();
+
+  const buttonClassName = (
+    `${(elements.length>numberElements) ? 'load-more-button load-more-button_page_history' : 'load-more-button_disable' }`
+    )
+
+  useEffect(() => {
+    handleWindowResize();
+  }, [size]);
+
+  function handleWindowResize () {
+    if(size.width > SCREEN_SIZE_DESKTOP) {
+      setNumberElemets(DESKTOP_NUMBER_HISTORY_ELEMENTS)
+    }
+    else if (size.width > SCREEN_SIZE_MIDLE) {
+      setNumberElemets(MIDLE_NUMBER_HISTORY_ELEMENTS)
+    } else {
+    setNumberElemets(MOBILE_NUMBER_HISTORY_ELEMENTS)}
+  }
+
+  function handleClick() {
+      setNumberElemets(numberElements+LOAD_MORE_MOBILE)
+  }
 
   return (
+    <>
     <ul className="history-table">
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
-      <li className="history-table__cell">
-        <div className="history-table__cell-container">
-          <h2 className="history-table__cell-title">84d15e0b4...eb7d3659d2939</h2>
-          <div className="history-table__cell-arrow"></div>
-        </div>
-        <p className="history-table__cell-value">Issued 2,010,279 USDD to the circulation account</p>
-        <p className="history-table__cell-date">2022-07-17 05:36:42</p>
-      </li>
+      {elements.slice(0, numberElements).map((element) => (
+        <HistoryTableCell element={element} />
+      ))}
     </ul>
+    <LoadMoreButton buttonClassName={buttonClassName} onClick={handleClick}/>
+    </>
   );
 }
 

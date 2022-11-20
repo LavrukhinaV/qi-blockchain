@@ -1,6 +1,4 @@
-import { NavLink } from 'react-router-dom';
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
-import MobileMenu from '../MobileMenu/MobileMenu';
 import BurgerMenu from "../BurgerMenu";
 import NavBlock from "../NavBlock/NavBlock";
 import './Header.css'

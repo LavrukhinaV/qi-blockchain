@@ -3,14 +3,13 @@ import "./IssuanceHistory.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HistoryTable from "../HistoryTable/HistoryTable";
-import LoadMoreButton from "../LoadMoreButton/LoadMoreButton";
 import useScreenWidth from "../../utils/useScreenWidth";
 import SliderSection from "../SliderSection"
 
 function IssuanceHistory() {
   const history = useHistory();
   const size = useScreenWidth();
-
+  
   return (
     <div className="issuance-history">
       <Header />
@@ -23,7 +22,6 @@ function IssuanceHistory() {
         <p className="issuance-history__subtitle">QiUSD transaction records of the issuance contract, 
         authorized contract, and circulation account (PSM transaction records are not included)</p>
         <HistoryTable />
-        {size.width<576 ? <LoadMoreButton /> : ""}
       </div>
       {size.width<576 ? <SliderSection /> : ""}
       <Footer />

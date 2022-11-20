@@ -17,3 +17,7 @@
 .load-more-button_page_history {
   align-self: flex-start;
 }
+
+.load-more-button_disable {
+  display: none;
+}

@@ -1,8 +1,6 @@
 import './Footer.css';
-
 import logoImage from "../../images/logo-foother.svg";
 import logoText from "../../images/foother-text.svg";
-
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import MentionLinks from "../MentionLinks/MentionLinks";
 import Copyright from "../Copyright/Copyright";

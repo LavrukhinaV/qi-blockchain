@@ -5,8 +5,10 @@
 }
 
 .menu {
-  position: absolute;
-  right: -55px;
+  // position: absolute;
+  position: fixed;
+  right: 0;
+  // right: -55px;
   margin-top: -70px;
   padding-top: 70px;
   padding-bottom: 25px;

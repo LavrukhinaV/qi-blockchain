@@ -9,48 +9,37 @@ import poloniex from "../../images/partners_poloniex.svg";
 function Members() {
  
   return (
-
     <section className="members">
       <h2 className="members__title">Members</h2>
       <div className="members__animation">
-        <ul className="members__list">
-          <li className="members__list-item">
-            <img className="members__list-logo" src={tpsCapital} alt="Tps Capital"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={falconx} alt="falconx"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={multichain} alt="multichain"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={mirana} alt="mirana"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={ankr} alt="ankr"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={poloniex} alt="poloniex"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={tpsCapital} alt="Tps Capital"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={falconx} alt="falconx"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={multichain} alt="multichain"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={mirana} alt="mirana"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={ankr} alt="ankr"></img>
-          </li>
-          <li className="members__list-item">
-            <img className="members__list-logo" src={poloniex} alt="poloniex"></img>
-          </li>
-        </ul>
+        <div className="members__animation-container">
+          <span className="members__list">
+            <img className="members__list-item" src={tpsCapital} alt="Tps Capital"></img>
+            <img className="members__list-item" src={falconx} alt="falconx"></img>
+            <img className="members__list-item" src={multichain} alt="multichain"></img>
+            <img className="members__list-item" src={ankr} alt="ankr"></img>
+            <img className="members__list-item" src={poloniex} alt="poloniex"></img>
+            <img className="members__list-item" src={tpsCapital} alt="Tps Capital"></img>
+            <img className="members__list-item" src={falconx} alt="falconx"></img>
+            <img className="members__list-item" src={multichain} alt="multichain"></img>
+            <img className="members__list-item" src={mirana} alt="mirana"></img>
+            <img className="members__list-item" src={ankr} alt="ankr"></img>
+            <img className="members__list-item" src={poloniex} alt="poloniex"></img>
+          </span>
+          <span className="members__list">
+            <img className="members__list-item" src={tpsCapital} alt="Tps Capital"></img>
+            <img className="members__list-item" src={falconx} alt="falconx"></img>
+            <img className="members__list-item" src={multichain} alt="multichain"></img>
+            <img className="members__list-item" src={ankr} alt="ankr"></img>
+            <img className="members__list-item" src={poloniex} alt="poloniex"></img>
+            <img className="members__list-item" src={tpsCapital} alt="Tps Capital"></img>
+            <img className="members__list-item" src={falconx} alt="falconx"></img>
+            <img className="members__list-item" src={multichain} alt="multichain"></img>
+            <img className="members__list-item" src={mirana} alt="mirana"></img>
+            <img className="members__list-item" src={ankr} alt="ankr"></img>
+            <img className="members__list-item" src={poloniex} alt="poloniex"></img>
+          </span>
+        </div>
       </div>
     </section>
     

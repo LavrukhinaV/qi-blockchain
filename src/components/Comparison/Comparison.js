@@ -1,5 +1,5 @@
 import './Comparison.css';
-import QIUSD from "../../images/QIUSD.png";
+import QIUSD from "../../images/QIUSD.svg";
 import USDT from "../../images/USDT.svg";
 import USDC from "../../images/USDC.svg";
 import DAI from "../../images/DAI.svg";

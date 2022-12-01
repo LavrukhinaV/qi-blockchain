@@ -1,7 +1,7 @@
 import "./Blockchain.css";
 import tron from "../../images/Tron.svg";
 import USDT from "../../images/USDT.svg";
-import QIUSD from "../../images/QIUSD.png";
+import QIUSD from "../../images/QIUSD.svg";
 
 function Blockchain({element}) {
   return(

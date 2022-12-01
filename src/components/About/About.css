@@ -43,8 +43,7 @@
   padding: 0;
   border: none;
   border-radius: 16px;
-  width: 497px;
-  height: 62px;
+  padding: 16px 224px;
   background: linear-gradient(to left, rgba(255, 19, 109, 1), rgba(69, 63, 214, 1));
   font-size: 24px;
   line-height: 30px;
@@ -136,7 +135,7 @@
   }
 
   .about__button_with-gradient {
-    width: 345px;
+    padding: 16px 154px;
   }
 
   .about__button-text {
@@ -146,7 +145,7 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 68px 15px;
+    padding: 40px 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -157,7 +156,7 @@
 
   .about__image {
     grid-area: image;
-    width: 255px;
+    width: 190px;
     height: auto;
   }
 
@@ -169,12 +168,14 @@
 
   .about__title {
     margin-top: 108px;
+    margin-bottom: 4px;
     font-size: 32px;
     line-height: 40px;
   }
 
   .about__text {
     font-size: 18px;
+    line-height: 22px;
     text-align: center;
     margin-right: 0;
     margin-bottom: 48px;
@@ -182,6 +183,11 @@
 
   .about__button-container {
     flex-direction: column;
+  }
+  
+  .about__button_with-gradient {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .about__button_without-gradient {

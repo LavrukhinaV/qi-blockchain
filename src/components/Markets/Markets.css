@@ -37,49 +37,41 @@
 }
 
 .markets_item_polycat-finance {
-  background-image: url(../../images/AMM/Polygon/polycat\ finance.png);
   left: 40%;
   top: 35%;
 }
 
  .markets_item_sushiswap {
-   background-image: url(../../images/AMM/Moonriver/sushiswap.png);
    top: 50%;
    left: 15%;
  }
 
  .markets_item_bakeryswap {
-   background-image: url(../../images/AMM/ETH\ &\ BSC/bakeryswap.png);
    bottom: 28%;
    left: 30%;
  }
 
  .markets_item_sdl-finance {
-   background-image: url(../../images/AMM/Multiple/saddle\ finance\ \(SDL\).png);
    bottom: 0;
    left: 25%;
  }
 
  .markets_item_curve {
-   background-image: url(../../images/AMM/Multiple/curve.png);
    top: 45%;
    right: 20%;
  }
 
  .markets_item_pancakeswap {
-   background-image: url(../../images/AMM/ETH\ &\ BSC/pancakeswap.png);
    top: 60%;
    right: 30%;
  }
 
  .markets_item_gibx {
-   background-image: url(../../images/AMM/ETH\ &\ BSC/GIBX.png);
    bottom: 10%;
    right: 20%;
  }
 
  .markets_item_definix {
-   background-image: url(../../images/AMM/Klaytn/definix.png);
    bottom: 5%;
    right: 40%;
  }
@@ -113,6 +105,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .markets {
+    padding-top: 120px;
+  }
+
   .markets__image {
     width: 667px;
     background-image: url(../../images/supporting-elements/markets-section-mobile.png);
@@ -120,6 +116,8 @@
 
   .markets__title {
     margin-bottom: 52px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .markets_item_polycat-finance {

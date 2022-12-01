@@ -8,7 +8,7 @@
   grid-area: copyright;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
   .copyright {
     font-size: 12px;
     line-height: 15px;

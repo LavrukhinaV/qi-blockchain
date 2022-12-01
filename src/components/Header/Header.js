@@ -18,7 +18,7 @@ function Header() {
         <img className="logo__text" alt="Лого сайта" src={logoText}/>
       </div>
       <div className="header__container">
-        <NavBlock />
+        <NavBlock className="nav-block__link"/>
       </div>
       <SocialNetworks />
       </>

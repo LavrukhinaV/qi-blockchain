@@ -7,8 +7,15 @@
   margin-right: 48px;
 }
 
-.hav-block__link:last-of-type {
+.nav-block__link:last-of-type {
   margin-right: 0;
+}
+
+.nav-block__link_footer {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.015em;
 }
 
 @media screen and (max-width: 1400px) {

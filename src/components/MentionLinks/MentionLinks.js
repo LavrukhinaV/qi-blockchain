@@ -14,9 +14,9 @@ import menaFM from "../../images/MenaFM.svg";
 import investingCom from "../../images/investing.com.svg";
 import yahooFinance from "../../images/Yahoo_Finance.svg";
 
-function MentionLinks () {
+function MentionLinks ({ className }) {
     return (
-      <ul className="mention-links">
+      <ul className={className}>
         <li className="mention-links__link">
           <a href='https://coinmarketcap.com/' target="blank">
             <img className="mention-links-image" src={coinMarketCap} alt="Coin Market Cap"></img>

@@ -448,3 +448,8 @@
     height: 152px;
   }
 }
+@media screen and (max-width: 400px) {
+  .diagram__link {
+    argin-right: 0;
+  }
+}

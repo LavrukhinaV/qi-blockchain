@@ -1,26 +1,34 @@
 import './Footer.css';
-import logoImage from "../../images/logo-foother.svg";
-import logoText from "../../images/foother-text.svg";
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import MentionLinks from "../MentionLinks/MentionLinks";
 import Copyright from "../Copyright/Copyright";
+import useScreenWidth from "../../utils/useScreenWidth";
+import NavBlock from "../NavBlock/NavBlock";
+import FooterLogo from "../FooterLogo/FooterLogo";
 
 function Footer() {
+  const size = useScreenWidth();
 
   return (
     <footer className="footer">
       <div className="footer__content">
-        <div className="footer__logo">
-          <img className="footer__logo-image" src={logoImage} alt="logo"></img>
-          <img className="footer__logo-text" src={logoText} alt="Blockchain"></img>
-        </div>
+      {size.width>1025 ?
+      <>
+        <FooterLogo />
         <Copyright />
-        <div className="footer__links">
-          <MentionLinks />
-        </div>
-        <div className="footer__social-networks">
-          <SocialNetworks />
-        </div>
+        <MentionLinks className="mention-links"/>
+        <SocialNetworks />
+      </>
+      :
+      <>
+        <nav className="footer__nav-block">
+          <NavBlock className="nav-block__link nav-block__link_footer"/>
+        </nav>
+        <MentionLinks className="mention-links mention-links_footer-mobile"/>
+        <SocialNetworks />
+        <Copyright />
+      </>
+    }
       </div>
     </footer>
   )

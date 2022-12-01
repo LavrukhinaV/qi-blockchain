@@ -26,7 +26,7 @@ const BurgerMenu = () => {
                 <div className={classes.menu}>
                     <NavBlock stateChanger={setIsActive}/>
                     <div className={classes.footer}>
-                        <MentionLinks/>
+                        <MentionLinks className="mention-links mention-links_footer-mobile"/>
                         <SocialNetworks/>
                         <Copyright />
                     </div>

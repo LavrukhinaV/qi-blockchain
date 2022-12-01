@@ -1,11 +1,27 @@
 .load-more-button {
-  margin-top: 62px;
+  /* margin-top: 62px;
   padding: 16px 77.5px;
   border: double 1px transparent;
   border-radius: 16px;
   background-image: linear-gradient(black, black), radial-gradient(circle at top left, rgba(69, 63, 214, 1),rgba(255, 19, 109, 1));
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  cursor: pointer;
+  align-self: center; */
+}
+
+.load-more-button {
+  margin-top: 62px;
+  padding: 16px 77.5px;
+  border: 0;
+  border-radius: 16px;
+  background:url(../../images/Frame7.svg);
+  background-size: cover;
+  background-position: center;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
   font-size: 24px;
@@ -20,4 +36,10 @@
 
 .load-more-button_disable {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .load-more-button {
+    margin-top: 24px;
+  }
 }

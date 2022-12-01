@@ -1,5 +1,6 @@
 .links {
   display: flex;
+  justify-self: flex-end;
 }
 
 .links__list {
@@ -43,6 +44,9 @@
   display: flex;
 }
 
-links__item lenks__item_telegram {
-  margin-right: 8px;
+@media screen and (max-width: 1025px) {
+  .links {
+    display: flex;
+    justify-self: center;
+  }
 }

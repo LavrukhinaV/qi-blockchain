@@ -9,6 +9,12 @@
   grid-area: links;
 }
 
+.mention-links_footer-mobile {
+  max-width: 100%;
+  gap: 16px;
+  justify-content: center;
+}
+
 .mention-links__link {
   margin-right: 12px;
   list-style: none;

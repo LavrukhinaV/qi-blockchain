@@ -11,4 +11,4 @@
 `npm run start` — запускает приложение
 
 ### *Github-pages:*
-`https://lavrukhinav.github.io/qi-blockchain`
+[https://lavrukhinav.github.io/qi-blockchain/](https://lavrukhinav.github.io/qi-blockchain/)

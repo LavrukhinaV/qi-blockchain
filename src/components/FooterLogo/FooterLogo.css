@@ -1,9 +1,0 @@
-.footer__logo {
-  grid-area: logo;
-  display: flex;
-  align-items: center;
-}
-
-.footer__logo-text {
-  margin-left: 16px;
-}
